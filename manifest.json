@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Credit Karma Net Worth Anomaly Fixer",
+  "version": "1.0",
+  "description": "Removes random, erroneous spikes from net worth chart",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.creditkarma.com/networth*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png",
+      "180": "icons/icon180.png"
+  }
+}
